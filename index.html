@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charbel Sawaya</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">Charbel Sawaya</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text-block reveal">
+          <span class="eyebrow">
+            <i class="fa-solid fa-circle-check"></i>
+            Computer Science Graduate
+          </span>
+
+          <h1 class="hero-title">
+            Hello! I'm
+            <span class="typewriter" id="typewriter"></span>
+          </h1>
+
+          <p class="hero-description">
+            Computer Science graduate with hands on experience in web development, databases, IT support, and team leadership.
+          </p>
+
+          <div class="hero-center-group">
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View My Work</a>
+              <a class="btn btn-secondary" href="assets/charbel sawaya resume.pdf" target="_blank">
+                Open Resume
+              </a>
+            </div>
+
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/charbel-sawaya-4187a7223/" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="#" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:charbeltsawaya@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+
+            <div class="contact-list">
+              <span>Beirut, Lebanon</span>
+              <span>Open to internships</span>
+              <span>Software • IT • Technical Operations</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-card reveal">
+          <div class="profile-ring"></div>
+          <img class="profile-image" src="charbel/Untitled.png" alt="Charbel Sawaya" />
+          <h3>Charbel Sawaya</h3>
+          <p class="small">Developer • Fresh Graduate • Store Manager</p>
+
+          <div class="skill-tags compact-tags">
+            <span class="tag">Problem Solving</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">Communication</span>
+            <span class="tag">Continuous Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="quick-stats">
+        <div class="card stat reveal">
+          <h3>3+</h3>
+          <p>Years of sales and branch management experience</p>
+        </div>
+        <div class="card stat reveal">
+          <h3>5</h3>
+          <p>Sales representatives coached and led</p>
+        </div>
+        <div class="card stat reveal">
+          <h3>4</h3>
+          <p>Languages spoken</p>
+        </div>
+        <div class="card stat reveal">
+          <h3>2</h3>
+          <p>Main technical projects built</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid about-grid-3">
+        <div class="card reveal tilt">
+          <div class="card-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3>Education</h3>
+          <div class="list">
+            <p>Bachelor of Science in Computer Science</p>
+            <p>AUST, Beirut</p>
+          </div>
+        </div>
+
+        <div class="card reveal tilt">
+          <div class="card-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Technical Focus</h3>
+          <div class="list">
+            <p>Web development</p>
+            <p>Databases</p>
+            <p>IT support and troubleshooting</p>
+          </div>
+        </div>
+
+        <div class="card reveal tilt">
+          <div class="card-icon">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+          </div>
+          <h3>Leadership Proof</h3>
+          <div class="list">
+            <p>Promoted to Branch Manager</p>
+            <p>Led a team of 5 sales representatives</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills-controls reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="programming">Programming</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+        <button class="filter-btn" data-filter="systems">Systems</button>
+        <button class="filter-btn" data-filter="soft">Soft Skills</button>
+      </div>
+
+      <div class="skills-grid">
+        <div class="card skill-card reveal skill-item tilt" data-category="programming">
+          <div class="card-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Programming & Development</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">C++</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="card skill-card reveal skill-item tilt" data-category="tools">
+          <div class="card-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="tag">Visual Studio</span>
+            <span class="tag">IntelliJ IDEA</span>
+            <span class="tag">NetBeans</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+          </div>
+        </div>
+
+        <div class="card skill-card reveal skill-item tilt" data-category="systems">
+          <div class="card-icon">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <h3>Systems & Troubleshooting</h3>
+          <div class="skill-tags">
+            <span class="tag">Windows</span>
+            <span class="tag">macOS</span>
+            <span class="tag">Hardware Troubleshooting</span>
+            <span class="tag">Software Troubleshooting</span>
+            <span class="tag">IT Essentials</span>
+            <span class="tag">CCNA</span>
+          </div>
+        </div>
+
+        <div class="card skill-card reveal skill-item tilt" data-category="soft">
+          <div class="card-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="tag">Leadership</span>
+            <span class="tag">Communication</span>
+            <span class="tag">Collaboration</span>
+            <span class="tag">Analytical Problem Solving</span>
+            <span class="tag">Customer-Centric</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="experience-grid">
+        <div class="card experience-card reveal tilt">
+          <h3>Branch Manager</h3>
+          <p class="meta">Birkenstock, ABC Achrafieh • Oct 2023 – Present</p>
+          <ul>
+            <li>Promoted from Sales Representative due to top performance and leadership potential.</li>
+            <li>Recruited, coached, and led a team of 5 sales representatives.</li>
+            <li>Ranked ABC Achrafieh as the top-performing store during peak seasons.</li>
+          </ul>
+        </div>
+
+        <div class="card experience-card reveal tilt">
+          <h3>Sales Representative</h3>
+          <p class="meta">Birkenstock, ABC Achrafieh • Aug 2022 – Oct 2023</p>
+          <ul>
+            <li>Exceeded monthly sales targets consistently.</li>
+            <li>Improved customer satisfaction through consultative selling.</li>
+            <li>Supported onboarding and mentoring of new team members.</li>
+          </ul>
+        </div>
+
+        <div class="card experience-card reveal tilt">
+          <h3>IT Support Assistant</h3>
+          <p class="meta">H Home Furniture • Jul 2021 – Oct 2021</p>
+          <ul>
+            <li>Provided hardware and software troubleshooting.</li>
+            <li>Configured PCs, switches, and routers.</li>
+            <li>Advised clients on upgrades and practical IT improvements.</li>
+          </ul>
+        </div>
+
+        <div class="card experience-card reveal tilt">
+  <h3>Languages</h3>
+  <p class="meta">Communication range</p>
+
+  <div class="language-bars">
+    <div class="language-item">
+      <div class="language-top">
+        <span>Arabic</span>
+  
+      </div>
+      <div class="language-track">
+        <div class="language-fill" style="width: 100%;"></div>
+      </div>
+    </div>
+
+    <div class="language-item">
+      <div class="language-top">
+        <span>English</span>
+        
+      </div>
+      <div class="language-track">
+        <div class="language-fill" style="width: 90%;"></div>
+      </div>
+    </div>
+
+    <div class="language-item">
+      <div class="language-top">
+        <span>French</span>
+      </div>
+      <div class="language-track">
+        <div class="language-fill" style="width: 90%;"></div>
+      </div>
+    </div>
+
+    <div class="language-item">
+      <div class="language-top">
+        <span>Spanish</span>
+  
+      </div>
+      <div class="language-track">
+        <div class="language-fill" style="width: 35%;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid project-grid-3">
+        <div class="card project-card reveal tilt">
+          <div class="project-top">
+            <div class="card-icon small-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <span class="meta">Project 1</span>
+          </div>
+          <h3>YallaService</h3>
+          <p class="project-stack">HTML · CSS · JavaScript · SQL</p>
+          <p class="project-text">
+            Marketplace platform connecting service seekers with professionals.
+          </p>
+          <ul>
+            <li>Built registration and listing features</li>
+            <li>Added search and usability improvements</li>
+            <li>Worked in Agile with Git</li>
+          </ul>
+          <div class="project-actions">
+            <a href="#" class="btn btn-primary small-btn">View Project</a>
+            <a href="#" class="btn btn-secondary small-btn">GitHub</a>
+          </div>
+        </div>
+
+        <div class="card project-card reveal tilt">
+          <div class="project-top">
+            <div class="card-icon small-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <span class="meta">Project 2</span>
+          </div>
+          <h3>Blood Donation Database</h3>
+          <p class="project-stack">SQL · Database Design</p>
+          <p class="project-text">
+            Relational database for donor and patient record management.
+          </p>
+          <ul>
+            <li>Designed normalized schema</li>
+            <li>Built secure structured relationships</li>
+            <li>Wrote SQL queries for retrieval</li>
+          </ul>
+          <div class="project-actions">
+            <a href="#" class="btn btn-primary small-btn">View Project</a>
+            <a href="#" class="btn btn-secondary small-btn">GitHub</a>
+          </div>
+        </div>
+
+        <div class="card project-card reveal tilt">
+          <div class="project-top">
+            <div class="card-icon small-icon">
+              <i class="fa-solid fa-window-maximize"></i>
+            </div>
+            <span class="meta">Current Build</span>
+          </div>
+          <h3>Career Portfolio Website</h3>
+          <p class="project-stack">HTML · CSS · JavaScript</p>
+          <p class="project-text">
+            Responsive personal portfolio built to present skills, experience, and projects clearly.
+          </p>
+          <ul>
+            <li>Responsive layout for desktop and mobile</li>
+            <li>Interactive skill filtering and scroll animations</li>
+            <li>Cleaner recruiter-focused structure</li>
+          </ul>
+          <div class="project-actions">
+            <a href="#" class="btn btn-primary small-btn">View Project</a>
+            <a href="#" class="btn btn-secondary small-btn">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="section" id="certifications">
+  <div class="container">
+    <div class="section-heading reveal">
+      <h2 class="section-title">Certifications</h2>
+    </div>
+
+    <div class="certifications-grid">
+      <a
+        href="https://www.credly.com/badges/2f98168c-b051-4b3a-b5d0-4394048db5ba/public_url"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cert-badge cert-link reveal tilt"
+        aria-label="Open CCNA Introduction to Networks certificate"
+      >
+        <div class="card-icon small-icon cert-icon">
+          <i class="fa-solid fa-award"></i>
+        </div>
+        <h3>CCNA</h3>
+        <p>Introduction to Networks</p>
+      </a>
+
+      <a
+        href="https://www.credly.com/badges/33b319ea-37d8-47a2-a8e0-5cb16364bf21/public_url"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cert-badge cert-link reveal tilt"
+        aria-label="Open CCNA Switching, Routing, and Wireless Essentials certificate"
+      >
+        <div class="card-icon small-icon cert-icon">
+          <i class="fa-solid fa-network-wired"></i>
+        </div>
+        <h3>CCNA</h3>
+        <p>Switching, Routing, and Wireless Essentials</p>
+      </a>
+
+      <a
+        href="https://www.credly.com/badges/913cf610-73ad-435a-8b1a-1dd36754123a/public_url"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cert-badge cert-link reveal tilt"
+        aria-label="Open IT Essentials certificate"
+      >
+        <div class="card-icon small-icon cert-icon">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <h3>IT Essentials</h3>
+        <p>Hardware, software, and support foundations</p>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-heading reveal">
+      <h2 class="section-title">Get In Touch</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="card reveal tilt">
+        <h3>Contact Information</h3>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-item-text">
+              <strong>Email</strong>
+              <span>charbeltsawaya@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-item-text">
+              <strong>Phone</strong>
+              <span>+961 71 247 852</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-item-text">
+              <strong>Location</strong>
+              <span>Beirut, Lebanon</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="contact-item-text">
+              <strong>LinkedIn</strong>
+              <span>linkedin.com/in/charbel-sawaya-4187a7223</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal tilt">
+        <h3>Contact Me</h3>
+        <form class="contact-form" id="contactForm">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input class="input" type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input class="input" type="email" id="email" name="email" placeholder="Your email" required />
+          </div>
+
+          <div class="input-group">
+            <label for="number">Number</label>
+            <input class="input" type="tel" id="number" name="number" placeholder="Your phone number" />
+          </div>
+
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea class="textarea" id="message" name="message" placeholder="Your message" required></textarea>
+          </div>
+
+          <button class="btn btn-primary submit-btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Charbel Sawaya. Built as a career portfolio.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
