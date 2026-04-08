@@ -1,5 +1,7 @@
 const filterButtons = document.querySelectorAll(".filter-btn");
 const skillItems = document.querySelectorAll(".skill-item");
+const skillsGrid = document.querySelector(".skills-grid");
+const skillsDotsContainer = document.getElementById("skillsDots");
 const navLinks = document.querySelectorAll(".nav-links a");
 const contactForm = document.getElementById("contactForm");
 const tiltCards = document.querySelectorAll(".tilt");
@@ -56,7 +58,9 @@ if (menuToggle && navMenu) {
     const expanded = navMenu.classList.contains("open");
     menuToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
   });
-  if (contactForm) {
+}
+
+if (contactForm) {
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
     alert(
@@ -65,13 +69,66 @@ if (menuToggle && navMenu) {
     contactForm.reset();
   });
 }
+
+// Skills Carousel Logic for Mobile
+if (skillsGrid && window.innerWidth <= 980) {
+  const skillCards = document.querySelectorAll(".skill-item");
+  let currentIndex = 0;
+
+  // Create dots
+  function createDots() {
+    skillsDotsContainer.innerHTML = "";
+    skillCards.forEach((_, index) => {
+      const dot = document.createElement("button");
+      dot.className = "carousel-dot";
+      dot.setAttribute("data-index", index);
+      if (index === 0) dot.classList.add("active");
+      dot.addEventListener("click", () => goToSlide(index));
+      skillsDotsContainer.appendChild(dot);
+    });
+  }
+
+  function updateDots() {
+    document.querySelectorAll(".carousel-dot").forEach((dot, index) => {
+      dot.classList.toggle("active", index === currentIndex);
+    });
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    const cardWidth = skillCards[0].offsetWidth + 22; // gap
+    skillsGrid.scrollTo({
+      left: currentIndex * cardWidth,
+      behavior: "smooth"
+    });
+    updateDots();
+  }
+
+  // Auto scroll every 5s
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % skillCards.length;
+    goToSlide(currentIndex);
+  }, 5000);
+
+  // Sync with scroll
+  skillsGrid.addEventListener("scroll", () => {
+    const scrollLeft = skillsGrid.scrollLeft;
+    const cardWidth = skillCards[0].offsetWidth + 22;
+    const newIndex = Math.round(scrollLeft / cardWidth);
+    if (newIndex !== currentIndex) {
+      currentIndex = newIndex;
+      updateDots();
+    }
+  });
+
+  createDots();
 }
 
 if (typewriterElement) {
   const words = [
     "Charbel Sawaya",
     "a Developer",
-    "a Fresh Graduate",
+    "a FreeLancer",
     "a Store Manager"
   ];
 
