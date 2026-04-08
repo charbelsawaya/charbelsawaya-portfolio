@@ -44,15 +44,14 @@
     <div class="container">
       <div class="hero-grid">
         <div class="hero-text-block reveal">
+
           <h1 class="hero-title">
             Hello! I'm
             <span class="typewriter" id="typewriter"></span>
           </h1>
-
           <p class="hero-description">
             Computer Science graduate with hands on experience in web development, databases, IT support, and team leadership.
           </p>
-
           <div class="hero-center-group">
             <div class="hero-actions">
               <a class="btn btn-primary" href="#projects">View My Work</a>
@@ -65,7 +64,7 @@
               <a href="https://www.linkedin.com/in/charbel-sawaya-4187a7223/" target="_blank" aria-label="LinkedIn">
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
-              <a href="https://github.com/charbelsawaya" aria-label="GitHub">
+              <a href="#" aria-label="GitHub">
                 <i class="fa-brands fa-github"></i>
               </a>
               <a href="mailto:charbeltsawaya@gmail.com" aria-label="Email">
@@ -84,8 +83,7 @@
           <div class="profile-ring"></div>
           <img class="profile-image" src="charbel/Untitled.png" alt="Charbel Sawaya" />
           <h3>Charbel Sawaya</h3>
-          <p class="small">Developer • Fresh Graduate • Store Manager</p>
-
+          <p class="small">FreeLancer • Store Manager</p>
           <div class="skill-tags compact-tags">
             <span class="tag">Problem Solving</span>
             <span class="tag">Leadership</span>
@@ -174,69 +172,73 @@
         <button class="filter-btn" data-filter="soft">Soft Skills</button>
       </div>
 
-      <div class="skills-grid">
-        <div class="card skill-card reveal skill-item tilt" data-category="programming">
-          <div class="card-icon">
-            <i class="fa-solid fa-code"></i>
+      <div class="skills-wrapper">
+        <div class="skills-grid">
+          <div class="card skill-card reveal skill-item tilt" data-category="programming" style="scroll-snap-align: start;">
+            <div class="card-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Programming & Development</h3>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">C++</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">SQL</span>
+            </div>
           </div>
-          <h3>Programming & Development</h3>
-          <div class="skill-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Java</span>
-            <span class="tag">C++</span>
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">SQL</span>
+
+          <div class="card skill-card reveal skill-item tilt" data-category="tools" style="scroll-snap-align: start;">
+            <div class="card-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3>Tools & Platforms</h3>
+            <div class="skill-tags">
+              <span class="tag">Visual Studio</span>
+              <span class="tag">IntelliJ IDEA</span>
+              <span class="tag">NetBeans</span>
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+            </div>
+          </div>
+
+          <div class="card skill-card reveal skill-item tilt" data-category="systems" style="scroll-snap-align: start;">
+            <div class="card-icon">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3>Systems & Troubleshooting</h3>
+            <div class="skill-tags">
+              <span class="tag">Windows</span>
+              <span class="tag">macOS</span>
+              <span class="tag">Hardware Troubleshooting</span>
+              <span class="tag">Software Troubleshooting</span>
+              <span class="tag">IT Essentials</span>
+              <span class="tag">CCNA</span>
+            </div>
+          </div>
+
+          <div class="card skill-card reveal skill-item tilt" data-category="soft" style="scroll-snap-align: start;">
+            <div class="card-icon">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h3>Soft Skills</h3>
+            <div class="skill-tags">
+              <span class="tag">Leadership</span>
+              <span class="tag">Communication</span>
+              <span class="tag">Collaboration</span>
+              <span class="tag">Analytical Problem Solving</span>
+              <span class="tag">Customer-Centric</span>
+            </div>
           </div>
         </div>
-
-        <div class="card skill-card reveal skill-item tilt" data-category="tools">
-          <div class="card-icon">
-            <i class="fa-solid fa-laptop-code"></i>
-          </div>
-          <h3>Tools & Platforms</h3>
-          <div class="skill-tags">
-            <span class="tag">Visual Studio</span>
-            <span class="tag">IntelliJ IDEA</span>
-            <span class="tag">NetBeans</span>
-            <span class="tag">Git</span>
-            <span class="tag">GitHub</span>
-          </div>
-        </div>
-
-        <div class="card skill-card reveal skill-item tilt" data-category="systems">
-          <div class="card-icon">
-            <i class="fa-solid fa-network-wired"></i>
-          </div>
-          <h3>Systems & Troubleshooting</h3>
-          <div class="skill-tags">
-            <span class="tag">Windows</span>
-            <span class="tag">macOS</span>
-            <span class="tag">Hardware Troubleshooting</span>
-            <span class="tag">Software Troubleshooting</span>
-            <span class="tag">IT Essentials</span>
-            <span class="tag">CCNA</span>
-          </div>
-        </div>
-
-        <div class="card skill-card reveal skill-item tilt" data-category="soft">
-          <div class="card-icon">
-            <i class="fa-solid fa-people-group"></i>
-          </div>
-          <h3>Soft Skills</h3>
-          <div class="skill-tags">
-            <span class="tag">Leadership</span>
-            <span class="tag">Communication</span>
-            <span class="tag">Collaboration</span>
-            <span class="tag">Analytical Problem Solving</span>
-            <span class="tag">Customer-Centric</span>
-          </div>
+        <div class="skills-carousel-dots" id="skillsDots">
+          <!-- Dots added by JS -->
         </div>
       </div>
     </div>
   </section>
-
   <section class="section" id="experience">
     <div class="container">
       <div class="section-heading reveal">
