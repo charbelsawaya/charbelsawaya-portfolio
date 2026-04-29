@@ -258,11 +258,11 @@ const projectData = {
     ],
     images: [
       {
-        src: "assets/projects/yallaservice-find-providers.png",
+        src: "projects/yallaservice-find-providers.png",
         caption: "Provider search page with category, location, and keyword filtering."
       },
       {
-        src: "assets/projects/yallaservice-concept.png",
+        src: "projects/yallaservice-concept.png",
         caption: "Concept visual representing a Lebanese service marketplace platform."
       }
     ]
@@ -281,15 +281,15 @@ const projectData = {
     ],
     images: [
       {
-        src: "assets/projects/blood-relationships.png",
+        src: "projects/blood-relationships.png",
         caption: "Relational schema connecting donors, patients, blood banks, diseases, and medical history tables."
       },
       {
-        src: "assets/projects/blood-query.png",
+        src: "projects/blood-query.png",
         caption: "SQL query retrieving donors diagnosed with hypertension by joining donor and medical history tables."
       },
       {
-        src: "assets/projects/blood-patient-table.png",
+        src: "projects/blood-patient-table.png",
         caption: "Patient table storing patient identity, date of birth, blood type, and Rh factor."
       }
     ]
