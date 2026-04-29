@@ -8,7 +8,63 @@ const tiltCards = document.querySelectorAll(".tilt");
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navLinks");
 const typewriterElement = document.getElementById("typewriter");
+const certSlider = document.getElementById("certSlider");
+const certPrev = document.querySelector(".cert-prev");
+const certNext = document.querySelector(".cert-next");
+const certDots = document.querySelectorAll(".cert-dot");
 
+if (certSlider && certPrev && certNext && certDots.length) {
+  const certCards = certSlider.querySelectorAll(".cert-badge");
+
+  function scrollToCert(index) {
+    const card = certCards[index];
+    if (!card) return;
+
+    certSlider.scrollTo({
+      left: card.offsetLeft - certSlider.offsetLeft,
+      behavior: "smooth"
+    });
+
+    certDots.forEach(dot => dot.classList.remove("active"));
+    certDots[index].classList.add("active");
+  }
+
+  certPrev.addEventListener("click", () => {
+    const currentIndex = [...certDots].findIndex(dot => dot.classList.contains("active"));
+    const nextIndex = currentIndex <= 0 ? certCards.length - 1 : currentIndex - 1;
+    scrollToCert(nextIndex);
+  });
+
+  certNext.addEventListener("click", () => {
+    const currentIndex = [...certDots].findIndex(dot => dot.classList.contains("active"));
+    const nextIndex = currentIndex >= certCards.length - 1 ? 0 : currentIndex + 1;
+    scrollToCert(nextIndex);
+  });
+
+  certDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => scrollToCert(index));
+  });
+
+  certSlider.addEventListener("scroll", () => {
+    const sliderCenter = certSlider.scrollLeft + certSlider.offsetWidth / 2;
+
+    let activeIndex = 0;
+    let closestDistance = Infinity;
+
+    certCards.forEach((card, index) => {
+      const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+      const distance = Math.abs(sliderCenter - cardCenter);
+
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        activeIndex = index;
+      }
+    });
+
+    certDots.forEach(dot => dot.classList.remove("active"));
+    certDots[activeIndex].classList.add("active");
+  });
+}
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     filterButtons.forEach((btn) => btn.classList.remove("active"));
@@ -368,8 +424,80 @@ if (modalNext) {
   });
 }
 
+
+
+
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && projectModal && projectModal.classList.contains("open")) {
     closeProjectModal();
   }
 });
+
+/* ===== Certificate slider arrows ===== */
+document.addEventListener("DOMContentLoaded", () => {
+  const certSlider = document.querySelector("#certSlider");
+  const certPrev = document.querySelector(".cert-prev");
+  const certNext = document.querySelector(".cert-next");
+  const certDots = document.querySelectorAll(".cert-dot");
+
+  if (!certSlider || !certPrev || !certNext) return;
+
+  const certCards = Array.from(certSlider.querySelectorAll(".cert-badge"));
+  let currentCertIndex = 0;
+
+  function updateDots(index) {
+    certDots.forEach((dot) => dot.classList.remove("active"));
+    if (certDots[index]) {
+      certDots[index].classList.add("active");
+    }
+  }
+
+  function goToCert(index) {
+    if (!certCards.length) return;
+    if (index < 0) index = certCards.length - 1;
+    if (index >= certCards.length) index = 0;
+    currentCertIndex = index;
+    certCards[index].scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest"
+    });
+    updateDots(index);
+  }
+
+  certPrev.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    goToCert(currentCertIndex - 1);
+  });
+
+  certNext.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    goToCert(currentCertIndex + 1);
+  });
+
+  certDots.forEach((dot, index) => {
+    dot.addEventListener("click", (event) => {
+      event.preventDefault();
+      goToCert(index);
+    });
+  });
+
+  certSlider.addEventListener("scroll", () => {
+    const sliderCenter = certSlider.scrollLeft + certSlider.offsetWidth / 2;
+    let closestIndex = 0;
+    let closestDistance = Infinity;
+    certCards.forEach((card, index) => {
+      const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+      const distance = Math.abs(sliderCenter - cardCenter);
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestIndex = index;
+      }
+    });
+    currentCertIndex = closestIndex;
+    updateDots(closestIndex);
+  });
+});
+
