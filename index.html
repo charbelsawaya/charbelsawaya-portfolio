@@ -17,6 +17,7 @@
   />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="bg-glow glow-1"></div>
   <div class="bg-glow glow-2"></div>
@@ -44,34 +45,36 @@
     <div class="container">
       <div class="hero-grid">
         <div class="hero-text-block reveal">
-
           <h1 class="hero-title">
             Hello! I'm
             <span class="typewriter" id="typewriter"></span>
           </h1>
+
           <div class="hero-center-group">
             <div class="hero-actions">
               <a class="btn btn-primary" href="#projects">View My Work</a>
-          <a class="btn btn-secondary" href="resume/charbel-sawaya-resume.pdf" target="_blank">
-  Open Resume
-</a>
+              <a class="btn btn-secondary" href="resume/charbel-sawaya-resume.pdf" target="_blank">
+                Open Resume
+              </a>
             </div>
 
             <div class="social-icons">
               <a href="https://www.linkedin.com/in/charbel-sawaya-4187a7223/" target="_blank" aria-label="LinkedIn">
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
-              <a href="https://github.com/charbelsawaya" aria-label="GitHub">
+
+              <a href="https://github.com/charbelsawaya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i class="fa-brands fa-github"></i>
               </a>
+
               <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=charbeltsawaya@gmail.com&su=Portfolio%20Contact"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Email Charbel"
->
-  <i class="fa-solid fa-envelope"></i>
-</a>
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=charbeltsawaya@gmail.com&su=Portfolio%20Contact"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Email Charbel"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
             </div>
 
             <div class="contact-list">
@@ -88,6 +91,7 @@
           <p class="small">Computer Science Graduate • Technical Problem Solver</p>
         </div>
       </div>
+    </div>
   </header>
 
   <section class="section" id="about">
@@ -114,10 +118,9 @@
           </div>
           <h3>Technical Focus</h3>
           <div class="list">
-            <p>
-            Web Solutions</p>
-<p>Database Systems</p>
-<p>Technical Support</p>
+            <p>Web Solutions</p>
+            <p>Database Systems</p>
+            <p>Technical Support</p>
           </div>
         </div>
 
@@ -128,7 +131,7 @@
           <h3>Career Direction</h3>
           <div class="list">
             <p>Software • IT Support</p>
-               <p>Data Analysis • Data Science</p>
+            <p>Data Analysis • Data Science</p>
           </div>
         </div>
       </div>
@@ -209,45 +212,45 @@
             </div>
           </div>
         </div>
-        <div class="skills-carousel-dots" id="skillsDots">
-          <!-- Dots added by JS -->
+
+        <div class="skills-carousel-dots" id="skillsDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="experience-timeline">
+        <div class="experience-row reveal">
+          <div class="experience-date">Oct 2023 — Present</div>
+          <div class="experience-panel">
+            <h3>Branch Manager • Birkenstock, ABC Achrafieh</h3>
+            <p>Managed daily branch operations, sales performance, workflow execution, and customer service quality.</p>
+          </div>
+        </div>
+
+        <div class="experience-row reveal">
+          <div class="experience-date">Aug 2022 — Oct 2023</div>
+          <div class="experience-panel">
+            <h3>Sales Representative • Birkenstock, ABC Achrafieh</h3>
+            <p>Guided customers through product selection, handled sales needs, and consistently achieved monthly targets.</p>
+          </div>
+        </div>
+
+        <div class="experience-row reveal">
+          <div class="experience-date">Jul 2021 — Oct 2021</div>
+          <div class="experience-panel">
+            <h3>IT Support Assistant • H Home Furniture</h3>
+            <p>Handled hardware/software troubleshooting, PC and network device setup, and basic IT upgrade recommendations.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
-<section class="section" id="experience">
-  <div class="container">
-    <div class="section-heading reveal">
-      <h2 class="section-title">Experience</h2>
-    </div>
-
-    <div class="experience-timeline">
-      <div class="experience-row reveal">
-        <div class="experience-date">Oct 2023 — Present</div>
-        <div class="experience-panel">
-          <h3>Branch Manager • Birkenstock, ABC Achrafieh</h3>
-          <p>Managed daily branch operations, sales performance, workflow execution, and customer service quality.</p>
-        </div>
-      </div>
-
-      <div class="experience-row reveal">
-        <div class="experience-date">Aug 2022 — Oct 2023</div>
-        <div class="experience-panel">
-          <h3>Sales Representative • Birkenstock, ABC Achrafieh</h3>
-          <p>Guided customers through product selection, handled sales needs, and consistently achieved monthly targets.</p>
-        </div>
-      </div>
-
-      <div class="experience-row reveal">
-        <div class="experience-date">Jul 2021 — Oct 2021</div>
-        <div class="experience-panel">
-          <h3>IT Support Assistant • H Home Furniture</h3>
-          <p>Handled hardware/software troubleshooting, PC and network device setup, and basic IT upgrade recommendations.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
   <section class="section projects-showcase" id="projects">
     <div class="container">
@@ -255,9 +258,15 @@
         <div class="showcase-title-row">
           <div>
             <h2 class="section-title showcase-title">Projects</h2>
-          </div><div class="showcase-arrows" aria-label="Project navigation">
-            <button class="circle-arrow" type="button" id="projectPrev" aria-label="Previous project"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="circle-arrow" type="button" id="projectNext" aria-label="Next project"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+          <div class="showcase-arrows" aria-label="Project navigation">
+            <button class="circle-arrow" type="button" id="projectPrev" aria-label="Previous project">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="circle-arrow" type="button" id="projectNext" aria-label="Next project">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -270,40 +279,104 @@
 
         <div class="project-display active" data-project-panel="yalla">
           <div class="project-preview-frame">
-          <img class="project-main-image" src="projects/yallaservice-find-providers.png" alt="YallaService find providers page">
-<div class="project-thumbs">
-  <button class="project-thumb active" type="button" data-src="projects/yallaservice-find-providers.png" data-caption="Provider search page with category, location, and keyword filtering." aria-label="Show YallaService providers page">
-    <img src="projects/yallaservice-find-providers.png" alt="YallaService providers thumbnail">
-  </button>
+            <img class="project-main-image" src="projects/yallaservice-find-providers.png" alt="YallaService find providers page" />
 
-  <button class="project-thumb" type="button" data-src="projects/yallaservice-concept.png" data-caption="Concept visual representing a Lebanese service marketplace platform." aria-label="Show YallaService concept visual">
-    <img src="projects/yallaservice-concept.png" alt="YallaService concept thumbnail">
-  </button>
-</div>
+            <div class="project-thumbs">
+              <button
+                class="project-thumb active"
+                type="button"
+                data-src="projects/yallaservice-find-providers.png"
+                data-caption="Provider search page with category, location, and keyword filtering."
+                aria-label="Show YallaService providers page"
+              >
+                <img src="projects/yallaservice-find-providers.png" alt="YallaService providers thumbnail" />
+              </button>
+
+              <button
+                class="project-thumb"
+                type="button"
+                data-src="projects/yallaservice-concept.png"
+                data-caption="Concept visual representing a Lebanese service marketplace platform."
+                aria-label="Show YallaService concept visual"
+              >
+                <img src="projects/yallaservice-concept.png" alt="YallaService concept thumbnail" />
+              </button>
+            </div>
+          </div>
+
           <div class="project-info-panel">
             <p class="project-category">Senior Project • 2025</p>
             <h3>YallaService</h3>
             <p class="project-summary">Service marketplace web platform connecting users with local professionals in Lebanon.</p>
-            <div class="skill-tags project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">Web Development</span></div>
-            <div class="project-actions showcase-actions"><button class="btn btn-primary" type="button" data-open-project="yalla">View Case Study</button><button class="btn btn-secondary" type="button" data-next-project>Next Project</button></div>
+
+            <div class="skill-tags project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Web Development</span>
+            </div>
+
+            <div class="project-actions showcase-actions">
+              <button class="btn btn-primary" type="button" data-open-project="yalla">View Case Study</button>
+              <button class="btn btn-secondary" type="button" data-next-project>Next Project</button>
+            </div>
           </div>
         </div>
 
         <div class="project-display" data-project-panel="blood">
           <div class="project-preview-frame">
-            <img class="project-main-image" src="assets/projects/blood-relationships.png" alt="Blood donation database relationships diagram">
+            <img class="project-main-image" src="projects/blood-relationships.png" alt="Blood donation database relationships diagram" />
+
             <div class="project-thumbs">
-              <button class="project-thumb active" type="button" data-src="assets/projects/blood-relationships.png" data-caption="Relational schema connecting donors, patients, blood banks, diseases, and medical history tables." aria-label="Show database relationship diagram"><img src="assets/projects/blood-relationships.png" alt="Database relationships thumbnail"></button>
-              <button class="project-thumb" type="button" data-src="assets/projects/blood-query.png" data-caption="SQL query retrieving donors diagnosed with hypertension by joining donor and medical history tables." aria-label="Show SQL query screenshot"><img src="assets/projects/blood-query.png" alt="SQL query thumbnail"></button>
-              <button class="project-thumb" type="button" data-src="assets/projects/blood-patient-table.png" data-caption="Patient table storing patient identity, date of birth, blood type, and Rh factor." aria-label="Show patient table screenshot"><img src="assets/projects/blood-patient-table.png" alt="Patient table thumbnail"></button>
+              <button
+                class="project-thumb active"
+                type="button"
+                data-src="projects/blood-relationships.png"
+                data-caption="Relational schema connecting donors, patients, blood banks, diseases, and medical history tables."
+                aria-label="Show database relationship diagram"
+              >
+                <img src="projects/blood-relationships.png" alt="Database relationships thumbnail" />
+              </button>
+
+              <button
+                class="project-thumb"
+                type="button"
+                data-src="projects/blood-query.png"
+                data-caption="SQL query retrieving donors diagnosed with hypertension by joining donor and medical history tables."
+                aria-label="Show SQL query screenshot"
+              >
+                <img src="projects/blood-query.png" alt="SQL query thumbnail" />
+              </button>
+
+              <button
+                class="project-thumb"
+                type="button"
+                data-src="projects/blood-patient-table.png"
+                data-caption="Patient table storing patient identity, date of birth, blood type, and Rh factor."
+                aria-label="Show patient table screenshot"
+              >
+                <img src="projects/blood-patient-table.png" alt="Patient table thumbnail" />
+              </button>
             </div>
           </div>
+
           <div class="project-info-panel">
             <p class="project-category">Database Project • 2024</p>
             <h3>Blood Donation Database</h3>
             <p class="project-summary">Relational database system for managing donors, patients, blood banks, and medical records.</p>
-            <div class="skill-tags project-tags"><span class="tag">SQL</span><span class="tag">Microsoft Access</span><span class="tag">Relational Database Design</span><span class="tag">Normalization</span></div>
-            <div class="project-actions showcase-actions"><button class="btn btn-primary" type="button" data-open-project="blood">View Case Study</button><button class="btn btn-secondary" type="button" data-next-project>Next Project</button></div>
+
+            <div class="skill-tags project-tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Microsoft Access</span>
+              <span class="tag">Relational Database Design</span>
+              <span class="tag">Normalization</span>
+            </div>
+
+            <div class="project-actions showcase-actions">
+              <button class="btn btn-primary" type="button" data-open-project="blood">View Case Study</button>
+              <button class="btn btn-secondary" type="button" data-next-project>Next Project</button>
+            </div>
           </div>
         </div>
       </div>
@@ -312,160 +385,195 @@
 
   <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
     <div class="modal-backdrop" data-close-modal></div>
+
     <div class="modal-card" role="document">
-      <button class="modal-close" type="button" data-close-modal aria-label="Close project case study"><i class="fa-solid fa-xmark"></i></button>
+      <button class="modal-close" type="button" data-close-modal aria-label="Close project case study">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
       <div class="modal-gallery">
-        <img id="modalImage" src="" alt="Project screenshot">
+        <img id="modalImage" src="" alt="Project screenshot" />
         <p id="modalCaption" class="modal-caption"></p>
-        <div class="modal-gallery-controls"><button class="circle-arrow" type="button" id="modalPrev" aria-label="Previous screenshot"><i class="fa-solid fa-chevron-left"></i></button><div id="modalDots" class="modal-dots"></div><button class="circle-arrow" type="button" id="modalNext" aria-label="Next screenshot"><i class="fa-solid fa-chevron-right"></i></button></div>
+
+        <div class="modal-gallery-controls">
+          <button class="circle-arrow" type="button" id="modalPrev" aria-label="Previous screenshot">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div id="modalDots" class="modal-dots"></div>
+
+          <button class="circle-arrow" type="button" id="modalNext" aria-label="Next screenshot">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
       </div>
+
       <div class="modal-info">
         <p id="modalCategory" class="project-category"></p>
         <h3 id="modalProjectTitle"></h3>
         <p id="modalSummary" class="project-summary"></p>
-        <h4>My Contribution</h4><p id="modalRole"></p>
-        <h4>Key Features</h4><ul id="modalFeatures"></ul>
+
+        <h4>My Contribution</h4>
+        <p id="modalRole"></p>
+
+        <h4>Key Features</h4>
+        <ul id="modalFeatures"></ul>
       </div>
     </div>
   </div>
-<section class="section" id="certifications">
-  <div class="container">
-    <div class="section-heading reveal">
-      <h2 class="section-title">Certifications</h2>
-    </div>
 
-    <div class="cert-slider-wrapper reveal">
-      <button class="cert-arrow cert-prev" type="button" aria-label="Previous certificate">
-        <i class="fa-solid fa-chevron-left"></i>
-      </button>
-
-      <div class="cert-slider" id="certSlider">
-        <a href="https://www.credly.com/badges/33b319ea-37d8-47a2-a8e0-5cb16364bf21/public_url"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="cert-badge cert-link">
-          <img src="assets\certifications\Switching , Routing & Wireless Essentials .png"
-               alt="CCNA Switching, Routing, and Wireless Essentials Certificate"
-               class="cert-img" />
-          <p class="cert-issuer">Cisco Networking Academy</p>
-          <h3>CCNA: Switching, Routing, and Wireless Essentials</h3>
-          <p>Routing, switching, wireless, and network configuration.</p>
-          <span class="cert-date">Issued Aug 2023 </span>
-        </a>
-
-        <a href="https://www.credly.com/badges/2f98168c-b051-4b3a-b5d0-4394048db5ba/public_url"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="cert-badge cert-link">
-          <img src="assets\certifications\intro to networks.png"
-               alt="CCNA Introduction to Networks Certificate"
-               class="cert-img" />
-          <p class="cert-issuer">Cisco Networking Academy</p>
-          <h3>CCNA: Introduction to Networks</h3>
-          <p>IP addressing, connectivity, and networking fundamentals.</p>
-          <span class="cert-date">Issued Jul 2023 </span>
-        </a>
-
-        <a href="https://www.credly.com/badges/913cf610-73ad-435a-8b1a-1dd36754123a/public_url"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="cert-badge cert-link">
-          <img src="assets\certifications\ITE.png"
-               alt="IT Essentials Certificate"
-               class="cert-img" />
-          <p class="cert-issuer">Cisco Networking Academy</p>
-          <h3>IT Essentials</h3>
-          <p>Hardware, software, operating systems, and troubleshooting.</p>
-          <span class="cert-date">Issued Feb 2022 </span>
-        </a>
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2 class="section-title">Certifications</h2>
       </div>
 
-      <button class="cert-arrow cert-next" type="button" aria-label="Next certificate">
-        <i class="fa-solid fa-chevron-right"></i>
-      </button>
+      <div class="cert-slider-wrapper reveal">
+        <button class="cert-arrow cert-prev" type="button" aria-label="Previous certificate">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="cert-slider" id="certSlider">
+          <a
+            href="https://www.credly.com/badges/33b319ea-37d8-47a2-a8e0-5cb16364bf21/public_url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cert-badge cert-link"
+          >
+            <img
+              src="certifications/Switching , Routing & Wireless Essentials .png"
+              alt="CCNA Switching, Routing, and Wireless Essentials Certificate"
+              class="cert-img"
+            />
+            <p class="cert-issuer">Cisco Networking Academy</p>
+            <h3>CCNA: Switching, Routing, and Wireless Essentials</h3>
+            <p>Routing, switching, wireless, and network configuration.</p>
+            <span class="cert-date">Issued Aug 2023</span>
+          </a>
+
+          <a
+            href="https://www.credly.com/badges/2f98168c-b051-4b3a-b5d0-4394048db5ba/public_url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cert-badge cert-link"
+          >
+            <img
+              src="certifications/intro to networks.png"
+              alt="CCNA Introduction to Networks Certificate"
+              class="cert-img"
+            />
+            <p class="cert-issuer">Cisco Networking Academy</p>
+            <h3>CCNA: Introduction to Networks</h3>
+            <p>IP addressing, connectivity, and networking fundamentals.</p>
+            <span class="cert-date">Issued Jul 2023</span>
+          </a>
+
+          <a
+            href="https://www.credly.com/badges/913cf610-73ad-435a-8b1a-1dd36754123a/public_url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cert-badge cert-link"
+          >
+            <img
+              src="certifications/ITE.png"
+              alt="IT Essentials Certificate"
+              class="cert-img"
+            />
+            <p class="cert-issuer">Cisco Networking Academy</p>
+            <h3>IT Essentials</h3>
+            <p>Hardware, software, operating systems, and troubleshooting.</p>
+            <span class="cert-date">Issued Feb 2022</span>
+          </a>
+        </div>
+
+        <button class="cert-arrow cert-next" type="button" aria-label="Next certificate">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="cert-dots" id="certDots">
+        <button class="cert-dot active" type="button" aria-label="Certificate 1"></button>
+        <button class="cert-dot" type="button" aria-label="Certificate 2"></button>
+        <button class="cert-dot" type="button" aria-label="Certificate 3"></button>
+      </div>
     </div>
+  </section>
 
-    <div class="cert-dots" id="certDots">
-      <button class="cert-dot active" type="button" aria-label="Certificate 1"></button>
-      <button class="cert-dot" type="button" aria-label="Certificate 2"></button>
-      <button class="cert-dot" type="button" aria-label="Certificate 3"></button>
-    </div>
-  </div>
-</section>
-<section class="section" id="contact">
-  <div class="container">
-    <div class="section-heading reveal">
-      <h2 class="section-title">Get In Touch</h2>
-    </div>
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
 
-    <div class="contact-grid">
-      <div class="card reveal tilt">
-        <h3>Contact Information</h3>
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-            <div class="contact-item-text">
-              <strong>Email</strong>
-              <span>charbeltsawaya@gmail.com</span>
+      <div class="contact-grid">
+        <div class="card reveal tilt">
+          <h3>Contact Information</h3>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-item-text">
+                <strong>Email</strong>
+                <span>charbeltsawaya@gmail.com</span>
+              </div>
             </div>
-          </div>
 
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-            <div class="contact-item-text">
-              <strong>Phone</strong>
-              <span>+961 71 247 852</span>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-item-text">
+                <strong>Phone</strong>
+                <span>+961 71 247 852</span>
+              </div>
             </div>
-          </div>
 
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="contact-item-text">
-              <strong>Location</strong>
-              <span>Beirut, Lebanon</span>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-item-text">
+                <strong>Location</strong>
+                <span>Beirut, Lebanon</span>
+              </div>
             </div>
-          </div>
 
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-            <div class="contact-item-text">
-              <strong>LinkedIn</strong>
-              <span>linkedin.com/in/charbel-sawaya-4187a7223</span>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-item-text">
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/charbel-sawaya-4187a7223</span>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="card reveal tilt">
+          <h3>Contact Me</h3>
+
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjgjnzpk" method="POST">
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input class="input" type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input class="input" type="email" id="email" name="email" placeholder="Your email" required />
+            </div>
+
+            <div class="input-group">
+              <label for="number">Number</label>
+              <input class="input" type="tel" id="number" name="number" placeholder="Your phone number" />
+            </div>
+
+            <div class="input-group">
+              <label for="message">Message</label>
+              <textarea class="textarea" id="message" name="message" placeholder="Your message" required></textarea>
+            </div>
+
+            <button class="btn btn-primary submit-btn" type="submit">Send Message</button>
+          </form>
+        </div>
       </div>
-
-     <div class="card reveal tilt">
-  <h3>Contact Me</h3>
-
-<form class="contact-form" id="contactForm" action="https://formspree.io/f/xjgjnzpk" method="POST"></form>
-    <div class="input-group">
-      <label for="name">Name</label>
-      <input class="input" type="text" id="name" name="name" placeholder="Your name" required />
     </div>
-
-    <div class="input-group">
-      <label for="email">Email</label>
-      <input class="input" type="email" id="email" name="email" placeholder="Your email" required />
-    </div>
-
-    <div class="input-group">
-      <label for="number">Number</label>
-      <input class="input" type="tel" id="number" name="number" placeholder="Your phone number" />
-    </div>
-
-    <div class="input-group">
-      <label for="message">Message</label>
-      <textarea class="textarea" id="message" name="message" placeholder="Your message" required></textarea>
-    </div>
-
-    <button class="btn btn-primary submit-btn" type="submit">Send Message</button>
-  </form>
-</div>
-    </div>
-  </div>
-</section>
+  </section>
 
   <footer class="footer">
     <div class="container">
