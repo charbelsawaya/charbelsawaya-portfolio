@@ -1797,7 +1797,36 @@ textarea {
 #contact .contact-icon i {
   color: var(--accent-2);
 }
+/* Stop mobile hero/typewriter layout shift */
+@media (max-width: 640px) {
+  .hero-title {
+    display: block;
+    text-align: center;
+    min-height: 120px;
+    line-height: 1.1;
+  }
 
+  .typewriter {
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    margin-top: 6px;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-title {
+    min-height: 105px;
+  }
+
+  .typewriter {
+    min-height: 44px;
+  }
+}
 @media (max-width: 860px) {
   .experience-row {
     grid-template-columns: 1fr;
