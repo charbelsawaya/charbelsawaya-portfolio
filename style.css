@@ -2583,5 +2583,26 @@ body {
     transform: none;
     box-shadow: var(--shadow);
   }
+  /* Stabilize typewriter text so the layout does not move */
+.hero-title {
+  min-height: 1.25em;
+}
+
+.typewriter {
+  display: inline-block;
+  min-width: 18ch;
+}
+
+@media (max-width: 760px) {
+  .hero-title {
+    min-height: 112px;
+  }
+
+  .typewriter {
+    display: block;
+    min-height: 48px;
+    min-width: 100%;
+  }
+}
 }
 
