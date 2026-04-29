@@ -115,16 +115,16 @@ if (menuToggle && navMenu) {
     menuToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
   });
 }
-
 if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert(
-      "This form is front-end only for now. Connect it to EmailJS, Formspree, or a backend endpoint."
-    );
-    contactForm.reset();
+  contactForm.addEventListener("submit", () => {
+    const submitButton = contactForm.querySelector(".submit-btn");
+    if (submitButton) {
+      submitButton.textContent = "Sending...";
+      submitButton.disabled = true;
+    }
   });
 }
+
 
 // Skills Carousel Logic for Mobile
 if (skillsGrid && window.innerWidth <= 980) {
