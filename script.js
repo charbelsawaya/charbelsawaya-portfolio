@@ -267,6 +267,7 @@ const projectData = {
       }
     ]
   },
+
   blood: {
     category: "Database Project • 2024",
     title: "Blood Donation Database",
@@ -293,10 +294,39 @@ const projectData = {
         caption: "Patient table storing patient identity, date of birth, blood type, and Rh factor."
       }
     ]
+  },
+
+  fifa: {
+    category: "Power BI Project • 2025",
+    title: "FIFA 23 Player Analytics Dashboard",
+    summary: "Interactive Power BI dashboard analyzing FIFA 23 player ratings, market value, nationality, preferred foot, position, and skill composition.",
+    role: "Built an interactive Power BI dashboard to explore player performance, compare skill attributes, filter by nationality, age, and position, and summarize key player metrics through visual analytics.",
+    features: [
+      "Player summary KPIs",
+      "Overall rating distribution",
+      "Nationality and age filtering",
+      "Preferred foot breakdown",
+      "Position-based filtering",
+      "Skill composition comparison"
+    ],
+    images: [
+      {
+        src: "projects/fifa-summary.png",
+        caption: "FIFA 23 summary dashboard showing player count, market value, average overall, and overall rating distribution."
+      },
+      {
+        src: "projects/fifa-preferred-foot.png",
+        caption: "Dashboard view analyzing player preferred foot, nationality, age range, and best position filters."
+      },
+      {
+        src: "projects/fifa-skills-composition.png",
+        caption: "Player skill composition dashboard comparing shooting, physicality, passing, pace, dribbling, and defending."
+      }
+    ]
   }
 };
 
-const projectOrder = ["yalla", "blood"];
+const projectOrder = ["yalla", "blood", "fifa"];
 let activeProjectIndex = 0;
 let modalProjectKey = "yalla";
 let modalImageIndex = 0;
