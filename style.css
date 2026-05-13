@@ -2569,6 +2569,37 @@ body {
     font-size: 0.74rem;
     padding: 7px 10px;
   }
+  /* FIFA Power BI dashboard screenshot fix */
+.project-display[data-project-panel="fifa"] .project-main-image {
+  object-fit: contain;
+  background: #3d5870;
+}
+
+.project-display[data-project-panel="fifa"] .project-thumb img {
+  object-fit: cover;
+}
+
+/* Stabilize typewriter text so the layout does not move */
+.hero-title {
+  min-height: 1.25em;
+}
+
+.typewriter {
+  display: inline-block;
+  min-width: 18ch;
+}
+
+@media (max-width: 760px) {
+  .hero-title {
+    min-height: 112px;
+  }
+
+  .typewriter {
+    display: block;
+    min-height: 48px;
+    min-width: 100%;
+  }
+}
 }
 
 /* Reduce hover movement on touch devices */
